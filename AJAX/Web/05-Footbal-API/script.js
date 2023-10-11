@@ -21,4 +21,13 @@ const fillTable = (data) => {
     document.getElementById("output").innerHTML = html;
 }
 
+/*
+printSth = () => {
+    console.log('Hallo');
+}
+*/
+
 loadData();
+//printSth();
+
+
