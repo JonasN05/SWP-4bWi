@@ -15,7 +15,7 @@ const fillTable = (data) => {
     data.forEach(element => {
         pointString = "Punkte: ";
 
-        html += "<div class='tablePlace'> <div class='container'> <img src=' "+ element.teamIconUrl +"'/> </div> <div class='team'>" + element.teamName + "</div> <div class='points'>" + pointString + element.points + "</div> </div>"
+        html += "<div class='tableElement'> <div></div> <div class='teamIcon'> <img src=' "+ element.teamIconUrl +"'/> </div> <div class='teamName'>" + element.teamName + "</div> <div class='points'>" + element.points + "</div> <div>" + element.won + "</div> <div>" + element.lost + "</div> <div>" + element.draw + "</div></div>"
     });
 
     document.getElementById("output").innerHTML = html;

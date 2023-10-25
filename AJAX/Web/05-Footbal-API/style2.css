@@ -20,47 +20,6 @@ body{
 
 
 
-
-.teamName{
-   width: 470px;
-   font-family: 'Roboto', sans-serif;
-   font-weight: 900;
-}
-
-.teamIcon{
-    display: flex;
-    align-items: center;
-    width: 65px;
-}
-
-.teamIcon img{
-    height: 30px;
-    width: auto;
-    margin-right: 30px;
-    margin-left: 10px;
-}
-
-.tableElement{
-    display: grid;
-    grid-template-columns: 1% 4% 45% 15% 5% 5% 5%;
-    align-items: center;
-    margin-top: 3px;
-
-    color: black;
-    width: 100vw;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 40px;
-}
-
-
-
-
-
-
-
-
-
 #heading{
     background-color: #383E42;
     width: 100%;
@@ -81,6 +40,7 @@ body{
     font-size: 35px;
 }
 #untertietel h1{
+    margin-top: 20px;
     font-size: 25px;
 }
 
@@ -94,32 +54,6 @@ body{
 
 
 
-#tableUpperBar{
-    background-color: #6B7276;
-    height: 60px;
-    width: 100%;
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns: 1% 4% 45% 15% 5% 5% 5%;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    font-weight: 900;
-    font-size: 15px;
-}
-
-#teamname{
-    padding-left: 10%;
-}
-#tableUpperBar h1{
-    font-size: 25px;
-}
-
-.points{
-    padding-left: 2%;
-}
-
-
-
 
 
 #bottomBar{
@@ -128,11 +62,8 @@ body{
     justify-content: space-evenly;
     align-items: center;
     height: 150px;
-    width: 100vw;
     background-color: #383E42;
     margin-top: 100px;
-    /*position: static;
-    bottom: 0px;*/
 }
 
 #pictureBottomBar{
@@ -198,21 +129,139 @@ body{
   .button h1 {
     width: 150px;
   }
-
-
   
   .button:hover .football {
     transform: rotate(360deg); /* 360 Grad Rotation beim Hover */
   }
   
   
+
+#selectedTeam{
+    height: 200px;
+    width: 100vw;
+    margin: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#selectedTeam img{
+    height: 100px;
+    width: auto;
+    transition: transform 0.5s;
+}
+
+
+#selectedTeam img:hover{
+    transform: scale(1.2);
+}
   
   
   
 
+.match{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 47.25% 5% 47.25%;
+    margin-top: 3px;
+    color: black;
+    width: 100vw;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 60px;
+}
 
-  .bindeStrich{
+.team1{
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+    align-items: center;
+    height: 60px;
+}
+.team2{
+    display: grid;
+    grid-template-columns: 10% 45% 45% ;
+    align-items: center;
+    height: 60px;
+}
+
+.bindestrich{
+    display: flex;
+    justify-content: center;
+}
+.bindestrich h1{
+    font-weight: 300;
+}
+
+.teamIcon1{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    padding-left: 160px;
+    
+}
+.teamName1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 110px;
+}
+.teamIcon1 img{
+    height: 50px;
+}
+
+.teamIcon2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 160px;
+    
+}
+.teamName2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 110px;
+}
+.teamIcon2 img{
+    height: 50px;
+}
+
+
+
+
+.score1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.score2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+
+.navBar{
+    margin-top: 5px;
+    background-color: #383E42;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navBar a{
+    color: white;
+    font-weight: 900;
+    padding: 100px;
+}
+
+.navBar a:hover{
+    color: black;
+}
