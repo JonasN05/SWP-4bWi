@@ -61,7 +61,7 @@ const fillFilter = (data2) => {
     let id = 0;
     teams.forEach(element => {
         html2 += "<img id='team"+id+"' src='"+element.teamIconUrl+"' onclick='selectDataSet("+id+")'/>"
-        console.log(html2);
+        //console.log(html2);
         id++;
     });
 
@@ -73,7 +73,7 @@ const fillFilter = (data2) => {
 
 let year = new Date().getFullYear();
 function selectDataSet(id){
-    console.log(id);
+    //console.log(id);
     let teamNameLinks = getLinkForTeam();
     
     sessionStorage.setItem("teamInformation", "https://api.openligadb.de/getmatchdata/%C3%B6bl1/"+year+"/"+teamNameLinks[id]+"");
