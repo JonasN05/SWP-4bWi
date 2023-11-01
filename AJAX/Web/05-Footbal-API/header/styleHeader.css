@@ -38,8 +38,6 @@
     align-items: center;
     justify-content: center;
     position:-webkit-sticky; 
-    position:sticky; 
-    top:-10px;
 }
 
 .navBarLink{
@@ -57,4 +55,10 @@
 
 .navBarElement:hover{
     transform: scale(1.2);
+}
+
+#navBarJs{
+    position: sticky;
+    top: -0.1px;
+    z-index: 2;
 }
