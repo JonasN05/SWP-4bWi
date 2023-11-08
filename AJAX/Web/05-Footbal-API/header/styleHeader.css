@@ -76,11 +76,15 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 100px;
+    height: 80px;
     width: 100vw;
     background-color: #383E42;
     margin-top: 100px;
     font-size: 10px;
+}
+#bottomBar h1{
+    font-weight: 300;
+    font-size: 15px;
 }
 
 
@@ -88,7 +92,7 @@
     display: flex;
     justify-content: center;
     height: 100%;
-    width: 33.33%;
+    width: calc(33.33%-50px);
 }
 
 #copyright{
@@ -98,6 +102,10 @@
     height: 100%;
     width: 33.33%;
     color: white;
+    
+}
+.year{
+    padding-left: 15px;
 }
 
 #aboutTheLiga{
@@ -114,9 +122,7 @@
     align-items: center;
     padding: 10px;
 }
-#aboutTheLiga a h1{
-}
 #aboutTheLiga a img{
-    height: 30px;
-    padding-left: 20px;
+    height: 25px;
+    padding-left: 15px;
 }

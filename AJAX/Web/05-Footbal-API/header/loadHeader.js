@@ -27,7 +27,7 @@ let htmlFooter = `
     <div id="footballLigaPicture"><img src="pictures/Vorschaubild_ABL_78f19_f_1280x720.png" alt=""></div>
     <div id="copyright">
     <h1>© Jonas Nigg</h1>
-    <h1>${dateYear}</h1>
+    <h1 class="year">${dateYear}</h1>
     </div>
 </div>`;
 
