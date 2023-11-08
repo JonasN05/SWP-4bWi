@@ -15,7 +15,20 @@ let htmlNavBarJs = `
 </div>`;
 
 
-console.log(htmlMainMenu);
-
 document.getElementById('main-menu').innerHTML = htmlMainMenu;
 document.getElementById('navBarJs').innerHTML = htmlNavBarJs;
+
+const date = new Date();
+let dateYear = date.getFullYear();
+
+let htmlFooter = `
+<div id="bottomBar">
+    <div id="aboutTheLiga"><a href="https://www.bundesliga.at/de/"><h1>About the Liga</h1><img src="pictures/BL50Y_RGB_RZ_63957_x_0x0.png" alt=""></a></div>
+    <div id="footballLigaPicture"><img src="pictures/Vorschaubild_ABL_78f19_f_1280x720.png" alt=""></div>
+    <div id="copyright">
+    <h1>© Jonas Nigg</h1>
+    <h1>${dateYear}</h1>
+    </div>
+</div>`;
+
+document.getElementById('footer').innerHTML = htmlFooter;

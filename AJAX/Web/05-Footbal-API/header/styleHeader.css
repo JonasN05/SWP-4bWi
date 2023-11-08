@@ -62,3 +62,61 @@
     top: -0.1px;
     z-index: 2;
 }
+
+
+
+
+
+
+
+
+
+#bottomBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 100vw;
+    background-color: #383E42;
+    margin-top: 100px;
+    font-size: 10px;
+}
+
+
+#footballLigaPicture{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 33.33%;
+}
+
+#copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33.33%;
+    color: white;
+}
+
+#aboutTheLiga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    color: white;
+}
+#aboutTheLiga a{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#aboutTheLiga a h1{
+}
+#aboutTheLiga a img{
+    height: 30px;
+    padding-left: 20px;
+}
