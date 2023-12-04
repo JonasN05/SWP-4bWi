@@ -6,3 +6,15 @@
 .main:hover{
     cursor: pointer;
 }
+
+.isOn{
+    border-style:solid;
+    padding: 10px;
+    background-color: aqua;
+    color: black;
+}
+
+.isOff{
+    border-style:solid;
+    padding: 10px;
+}

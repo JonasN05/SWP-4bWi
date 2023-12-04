@@ -1,0 +1,24 @@
+.isOn{
+    background-color: green;
+    color: white;
+    padding: 20px;
+    width: 90px;
+    height: 30px;
+}
+.isOn:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+
+.isOff{
+    background-color: green;
+    color: white;
+    padding: 20px;
+    width: 90px;
+    height: 30px;
+}
+.isOff:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+}
