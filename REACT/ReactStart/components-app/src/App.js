@@ -11,7 +11,9 @@ function App() {
         <div className="button">
           <Button name ="Sendar"/>
         </div>
+        <div className="button">
         <Card img="https://www.w3schools.com/howto/img_avatar.png" name="John Doe" description="Architect & Engineer" />
+        </div>
         <List data={array}/>
       </header>
 
