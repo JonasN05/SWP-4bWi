@@ -8,7 +8,7 @@ function App() {
         <PeopleContainer/>
       </header>
     </div>
-  );
+  ); 
 }
 
 export default App;
