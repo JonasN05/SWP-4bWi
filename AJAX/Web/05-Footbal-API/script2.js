@@ -71,7 +71,7 @@ const fillFilter = (data2) => {
 
 
 
-let year = new Date().getFullYear();
+let year = new Date().getFullYear()-1;
 function selectDataSet(id){
     //console.log(id);
     let teamNameLinks = getLinkForTeam();
