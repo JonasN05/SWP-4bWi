@@ -13,10 +13,9 @@ module.exports = {
 
       },
       fontFamily: {
-        roboto: ['"Roboto, sans-serif"']
+        roboto: ['"Roboto"'],
+        khand: ['"Khand"']
       }
-
-
     },
   },
   plugins: [],
