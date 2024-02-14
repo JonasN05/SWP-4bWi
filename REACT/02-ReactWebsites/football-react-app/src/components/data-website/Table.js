@@ -6,7 +6,7 @@ export default function Table({ teams }) {
   return (
     <div>
       {teams.map(team => {
-        return <Team name={team.teamName} points={team.team} />
+        return <Team name={team.teamName} points={team.points} won={team.won} lost={team.won} draw={team.draw} />
       })}
     </div>
   )
