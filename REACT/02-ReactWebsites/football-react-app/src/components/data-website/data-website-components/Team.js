@@ -1,10 +1,14 @@
 import React from 'react'
+import styles from './Team.module.css'
 
-export default function Team({ name, points, won, lost, draw }) {
-    console.log({ name, points })
+export default function Team({ name, points, won, lost, draw, icon }) {
+    console.log({ name, points, icon })
     return (
-        <div className='w-full grid grid-cols-5'>
-            <div>{name}</div>
+        <div className={styles.span}>
+
+            <div></div>
+            <div><img src={icon} alt='' /></div>
+            <div className='font-black'>{name}</div>
             <div>{points}</div>
             <div>{won}</div>
             <div>{lost}</div>

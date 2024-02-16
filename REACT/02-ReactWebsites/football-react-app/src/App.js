@@ -26,7 +26,7 @@ function App() {
     {
       path: "/",
       element:
-        <div className='bg-backgroundwhite font-display'>
+        <div className='bg-background-white font-display'>
           <div><Header /></div>
           <div><Navigation /></div>
           <div><Table teams={teams} /></div>
@@ -36,7 +36,7 @@ function App() {
     {
       path: "/games",
       element:
-        <div className='bg-backgroundwhite font-display'>
+        <div className='bg-background-white font-display'>
           <div><Header /></div>
           <div><Navigation /></div>
           <div>Games</div>

@@ -1,0 +1,9 @@
+.span {
+    display: grid;
+    grid-template-columns: 1% 4% 45% 15% 5% 5% 5%;
+    height: 60px;
+    align-items: center;
+    background-color: #6B7276;
+    margin-top: 3px;
+    font-weight: 900;
+}
