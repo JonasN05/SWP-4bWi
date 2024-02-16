@@ -1,8 +1,17 @@
 .span {
     display: grid;
     grid-template-columns: 1% 4% 45% 15% 5% 5% 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 60px;
-    align-items: center;
     background-color: white;
     margin-top: 3px;
+    height: 40px;
+    align-items: center;
+}
+
+.img {
+    height: 30px;
+    width: auto;
+    margin-right: 30px;
+    margin-left: 10px;
 }

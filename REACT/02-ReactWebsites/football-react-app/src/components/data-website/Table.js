@@ -9,8 +9,8 @@ export default function Table({ teams }) {
 
       <div className={styles.span}>
         <div></div>
-        <div>Teamname</div>
         <div></div>
+        <div className={styles.teamName}> Teamname</div>
         <div>PTS</div>
         <div>W</div>
         <div>L</div>

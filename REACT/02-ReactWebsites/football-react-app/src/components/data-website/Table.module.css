@@ -1,9 +1,15 @@
 .span {
     display: grid;
     grid-template-columns: 1% 4% 45% 15% 5% 5% 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 60px;
     align-items: center;
     background-color: #6B7276;
     margin-top: 3px;
     font-weight: 900;
+}
+
+.teamName {
+    font-size: 25px;
+    padding-left: 10%;
 }

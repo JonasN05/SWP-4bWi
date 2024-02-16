@@ -7,7 +7,7 @@ export default function Team({ name, points, won, lost, draw, icon }) {
         <div className={styles.span}>
 
             <div></div>
-            <div><img src={icon} alt='' /></div>
+            <div><img src={icon} alt='' className={styles.img} /></div>
             <div className='font-black'>{name}</div>
             <div>{points}</div>
             <div>{won}</div>
