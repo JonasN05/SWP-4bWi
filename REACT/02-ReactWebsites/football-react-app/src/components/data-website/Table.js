@@ -5,7 +5,7 @@ import styles from './Table.module.css'
 export default function Table({ teams }) {
 
   return (
-    <div className='mt-24'>
+    <div className='mt-16'>
 
       <div className={styles.span}>
         <div></div>
