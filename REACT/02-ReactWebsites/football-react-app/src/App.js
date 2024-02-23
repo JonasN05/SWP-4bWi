@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     fetch("https://api.openligadb.de/getbltable/%C3%B6bl1/2023").then(
       (res) => res.json().then((data) => {
-        console.log(data);
+        //console.log(data);
         setTeams(data);
       })
     );

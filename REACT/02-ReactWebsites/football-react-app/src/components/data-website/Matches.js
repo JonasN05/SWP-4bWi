@@ -1,18 +1,19 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+import Match from './data-website-components/Match.js'
 
 export default function Matches({ teams }) {
 
-  const [matches, setMatches] = useState([]);
+  const [matches, setMatches] = useState("https://api.openligadb.de/getmatchdata/%C3%B6bl1/2023/CASHPOINT%20SCR%20Altach");
+  const [matchDataOfSpecificTeam, setMatchDataOfSpecificTeam] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.openligadb.de/getbltable/%C3%B6bl1/2023").then((result) => {
-      result.json().then((matches) => {
-
+    fetch(matches).then((result) => {
+      result.json().then((matchData) => {
+        setMatchDataOfSpecificTeam(matchData);
       })
     });
   }, [matches]);
-
 
 
   teams.sort((x, y) => x.teamName.localeCompare(y.teamName));
@@ -21,24 +22,26 @@ export default function Matches({ teams }) {
   return (
     <div>
       <div className='w-full flex justify-evenly'>
-
         {teams.map(team => {
-          return <div className='p-2'><img src={team.teamIconUrl} alt=''></img></div>
+          return <div className='p-2' onClick={() => onclickHandler(team)}><img src={team.teamIconUrl} alt=''></img></div>
         })}
-
       </div>
 
-      <div>
-        set
+      <div className='h-full'>
+        {matchDataOfSpecificTeam.map(match => {
+          return <Match match={match}></Match>
+        })}
       </div>
-
-
     </div >
-
   )
 
   function onclickHandler(team) {
+    let year = new Date().getFullYear() - 1;
+    let teamName = team.teamName;
 
+    let teamNameLink = teamName.replaceAll(" ", "%20");
+
+    setMatches("https://api.openligadb.de/getmatchdata/%C3%B6bl1/" + year + "/" + teamNameLink + "");
   }
 
 }

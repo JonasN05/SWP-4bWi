@@ -7,7 +7,6 @@ export default function Card(props) {
         <h2 className='font-bold text-xl'>{props.name}</h2>
         <h4>{props.title}</h4>
       </div>
-
       <div className='bg-green-400 w-full flex-1'>
         <img src={props.imageUrl} alt='' className='object-cover w-full h-full' />
       </div>

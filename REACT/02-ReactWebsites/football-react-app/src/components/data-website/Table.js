@@ -4,17 +4,21 @@ import styles from './Table.module.css'
 
 export default function Table({ teams }) {
 
+  teams.sort(function (a, b) {
+    return b.points - a.points;
+  });
+
   return (
     <div className='mt-16'>
 
       <div className={styles.span}>
-        <div></div>
-        <div></div>
+        <div className=''></div>
+        <div className=''></div>
         <div className={styles.teamName}> Teamname</div>
-        <div>PTS</div>
-        <div>W</div>
-        <div>L</div>
-        <div>D</div>
+        <div className=''>PTS</div>
+        <div className=''>W</div>
+        <div className=''>L</div>
+        <div className=''>D</div>
       </div>
 
       {teams.map(team => {

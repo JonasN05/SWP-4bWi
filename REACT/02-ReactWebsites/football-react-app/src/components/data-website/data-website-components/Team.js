@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Team.module.css'
 
 export default function Team({ name, points, won, lost, draw, icon }) {
-    console.log({ name, points, icon })
+    //console.log({ name, points, icon })
     return (
         <div className={styles.span}>
 
