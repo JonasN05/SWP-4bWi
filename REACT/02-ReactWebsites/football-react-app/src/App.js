@@ -2,6 +2,7 @@ import Header from './components/Header.js';
 import Navigation from './components/Navigation.js';
 import Footer from './components/Footer.js';
 import Table from './components/data-website/Table.js';
+import Matches from './components/data-website/Matches.js';
 import styles from './App.module.css'
 import React, { useEffect, useState } from 'react'
 import {
@@ -40,7 +41,7 @@ function App() {
         <div className='bg-background-white font-display'>
           <div><Header /></div>
           <div><Navigation /></div>
-          <div>Games</div>
+          <div><Matches teams={teams} /></div>
           <div><Footer /></div>
         </div>,
     },
