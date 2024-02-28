@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
@@ -12,9 +12,9 @@ a {
 
 body::-webkit-scrollbar {
     display: none;
-  }
+}
 
-body{
+body {
     background-color: #f5f5f5;
 }
 
@@ -28,9 +28,9 @@ body{
 
 
 
-  
 
-#selectedTeam{
+
+#selectedTeam {
     height: 200px;
     width: 100vw;
     margin: 40px;
@@ -39,21 +39,21 @@ body{
     align-items: center;
 }
 
-#selectedTeam img{
+#selectedTeam img {
     height: 100px;
     width: auto;
     transition: transform 0.5s;
 }
 
 
-#selectedTeam img:hover{
+#selectedTeam img:hover {
     transform: scale(1.2);
 }
-  
-  
-  
 
-.match{
+
+
+
+.match {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -66,71 +66,78 @@ body{
     height: 60px;
 }
 
-.team1{
+.team1 {
     display: grid;
     grid-template-columns: 45% 45% 10%;
     align-items: center;
     height: 60px;
 }
-.team2{
+
+.team2 {
     display: grid;
-    grid-template-columns: 10% 45% 45% ;
+    grid-template-columns: 10% 45% 45%;
     align-items: center;
     height: 60px;
 }
 
-.bindestrich{
+.bindestrich {
     display: flex;
     justify-content: center;
 }
-.bindestrich h1{
+
+.bindestrich h1 {
     font-weight: 300;
 }
 
-.teamIcon1{
+.teamIcon1 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 160px;
-    
+
 }
-.teamName1{
+
+.teamName1 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-right: 110px;
 }
-.teamIcon1 img{
+
+.teamIcon1 img {
     height: 50px;
 }
 
-.teamIcon2{
+.teamIcon2 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-right: 160px;
-    
+
 }
-.teamName2{
+
+.teamName2 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 110px;
 }
-.teamIcon2 img{
+
+.teamIcon2 img {
     height: 50px;
 }
 
 
 
 
-.score1{
+.score1 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
 }
-.score2{
+
+.score2 {
     display: flex;
     justify-content: center;
     align-items: center;

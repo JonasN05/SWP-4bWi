@@ -6,7 +6,7 @@ export default function Navigation() {
   return (
     <div className='flex justify-evenly items-center bg-dark-grey mt-4 text-slate-50 font-black h-10'>
 
-      <div className='' onClick={() => {
+      <div className='hover:cursor-pointer' onClick={() => {
         navigate("/");
       }}>
         Bundesligatabelle

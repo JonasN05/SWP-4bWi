@@ -10,3 +10,60 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 60px;
 }
+
+.team1 {
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+    align-items: center;
+    height: 60px;
+}
+
+.team2 {
+    display: grid;
+    grid-template-columns: 10% 45% 45%;
+    align-items: center;
+    height: 60px;
+}
+
+.bindestrich {
+    display: flex;
+    justify-content: center;
+}
+
+.teamIcon1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 160px;
+
+}
+
+.teamName1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 110px;
+}
+
+.teamIcon1 img {
+    height: 50px;
+}
+
+.teamIcon2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 160px;
+
+}
+
+.teamName2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 110px;
+}
+
+.teamIcon2 img {
+    height: 50px;
+}
