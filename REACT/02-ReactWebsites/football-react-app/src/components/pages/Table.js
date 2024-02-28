@@ -1,5 +1,5 @@
 import React from 'react'
-import Team from './data-website-components/Team.js'
+import Team from '../molekules/Team.js'
 import styles from './Table.module.css'
 
 export default function Table({ teams }) {

@@ -1,8 +1,8 @@
-import Header from './components/Header.js';
-import Navigation from './components/Navigation.js';
-import Footer from './components/Footer.js';
-import Table from './components/data-website/Table.js';
-import Matches from './components/data-website/Matches.js';
+import Header from './components/pages/Header.js';
+import Navigation from './components/pages/Navigation.js';
+import Footer from './components/pages/Footer.js';
+import Table from './components/pages/Table.js';
+import Matches from './components/pages/Matches.js';
 import styles from './App.module.css'
 import React, { useEffect, useState } from 'react'
 import {

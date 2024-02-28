@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import Match from './data-website-components/Match.js'
+import Match from '../molekules/Match.js'
 
 export default function Matches({ teams }) {
 
