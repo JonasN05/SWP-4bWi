@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer className='flex justify-evenly items-center w-full h-16 bg-dark-grey text-slate-50 font-weight mt-10'>
+    <footer className='flex justify-evenly items-center w-full h-16 bg-dark-grey text-slate-50 font-weight mt-14'>
       <div className='h-full w-1/3 flex justify-center items-center'>
         About the Liga
       </div>

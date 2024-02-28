@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import Match from '../molekules/Match.js'
+import FilterElement from '../atoms/FIlterElement.js'
 
 export default function Matches({ teams }) {
 
@@ -20,10 +21,10 @@ export default function Matches({ teams }) {
 
 
   return (
-    <div>
-      <div className='w-full flex justify-evenly'>
+    <div className=''>
+      <div className='w-full flex justify-evenly mb-10 mt-10'>
         {teams.map(team => {
-          return <div className='p-2' onClick={() => onclickHandler(team)}><img src={team.teamIconUrl} alt=''></img></div>
+          return <FilterElement team={team} onclickHandler={onclickHandler}></FilterElement>
         })}
       </div>
 
