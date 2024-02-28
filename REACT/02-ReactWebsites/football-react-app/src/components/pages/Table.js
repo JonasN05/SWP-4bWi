@@ -1,6 +1,6 @@
 import React from 'react'
 import Team from '../molekules/Team.js'
-import styles from './Table.module.css'
+import TableHeader from '../molekules/TableHeader.js'
 
 export default function Table({ teams }) {
 
@@ -11,15 +11,7 @@ export default function Table({ teams }) {
   return (
     <div className='mt-16'>
 
-      <div className={styles.span}>
-        <div className=''></div>
-        <div className=''></div>
-        <div className={styles.teamName}> Teamname</div>
-        <div className=''>PTS</div>
-        <div className=''>W</div>
-        <div className=''>L</div>
-        <div className=''>D</div>
-      </div>
+      <TableHeader></TableHeader>
 
       {teams.map(team => {
         return <Team name={team.teamName} points={team.points} won={team.won} lost={team.won} draw={team.draw} icon={team.teamIconUrl} />
