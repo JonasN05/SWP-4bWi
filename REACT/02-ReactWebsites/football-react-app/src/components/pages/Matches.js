@@ -1,12 +1,13 @@
-import React from 'react'
-import { useEffect, useState } from 'react'
-import Match from '../molekules/Match.js'
-import FilterElement from '../atoms/FIlterElement.js'
+import React from 'react';
+import { useEffect, useState } from 'react';
+import Match from '../molekules/Match.js';
+import FilterElement from '../atoms/FIlterElement.js';
 
 export default function Matches({ teams }) {
 
   const [matches, setMatches] = useState("https://api.openligadb.de/getmatchdata/%C3%B6bl1/2023/CASHPOINT%20SCR%20Altach");
   const [matchDataOfSpecificTeam, setMatchDataOfSpecificTeam] = useState([]);
+
 
   useEffect(() => {
     fetch(matches).then((result) => {
@@ -43,6 +44,7 @@ export default function Matches({ teams }) {
     let teamNameLink = teamName.replaceAll(" ", "%20");
 
     setMatches("https://api.openligadb.de/getmatchdata/%C3%B6bl1/" + year + "/" + teamNameLink + "");
+
   }
 
 }
