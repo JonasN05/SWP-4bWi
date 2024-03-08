@@ -11,6 +11,7 @@ export default function FIlterTeam({ team, onclickHandler }) {
             onclickHandler(team)
             setScale(!scale);
             console.log(scale);
+
         }}>
             <img src={team.teamIconUrl} alt=''></img>
         </div >

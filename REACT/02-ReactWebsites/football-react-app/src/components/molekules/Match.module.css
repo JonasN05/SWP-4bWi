@@ -67,3 +67,9 @@
 .teamIcon2 img {
     height: 50px;
 }
+
+.points {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

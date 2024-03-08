@@ -19,14 +19,14 @@ export default function Match({ match }) {
             <div className={styles.team1}>
                 <div className={styles.teamIcon1}><img src={match.team1.teamIconUrl} alt=''></img></div>
                 <div className={styles.teamName1}>{match.team1.teamName}</div>
-                <div>{pointsTeam1}</div>
+                <div className={styles.points}>{pointsTeam1}</div>
 
             </div>
 
             <div className={styles.bindestrich}>-</div>
 
             <div className={styles.team2}>
-                <div>{pointsTeam2}</div>
+                <div className={styles.points}>{pointsTeam2}</div>
                 <div className={styles.teamName2}>{match.team2.teamName}</div>
                 <div className={styles.teamIcon2}><img src={match.team2.teamIconUrl} alt=''></img></div>
             </div>
