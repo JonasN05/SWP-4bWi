@@ -7,6 +7,8 @@ export default function Matches({ teams }) {
 
   const [matches, setMatches] = useState("https://api.openligadb.de/getmatchdata/%C3%B6bl1/2023/CASHPOINT%20SCR%20Altach");
   const [matchDataOfSpecificTeam, setMatchDataOfSpecificTeam] = useState([]);
+  const [id, setId] = useState(5852);
+  console.log(id);
 
 
   useEffect(() => {
@@ -25,7 +27,7 @@ export default function Matches({ teams }) {
     <div className=''>
       <div className='w-full flex justify-evenly mb-10 mt-10'>
         {teams.map(team => {
-          return <FilterElement team={team} onclickHandler={onclickHandler}></FilterElement>
+          return <FilterElement team={team} onclickHandler={onclickHandler} id={id}></FilterElement>
         })}
       </div>
 
@@ -40,6 +42,8 @@ export default function Matches({ teams }) {
   function onclickHandler(team) {
     let year = new Date().getFullYear() - 1;
     let teamName = team.teamName;
+
+    setId(team.teamInfoId);
 
     let teamNameLink = teamName.replaceAll(" ", "%20");
 
