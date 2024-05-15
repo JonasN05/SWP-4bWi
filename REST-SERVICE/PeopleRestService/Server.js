@@ -29,12 +29,14 @@ app.get('/people/:id', (req, res) => {
     res.send(data[req.params.id - 1])
 });
 
-app.post('/people', (req, res) => {
+app.post('/people', async (req, res) => {
     let person = req.body;
 
     let length = data.length + 1
     person.id = length
-    console.log(length)
+    console.log(person.name)
+
+    let result = await db.query("insert into people(firstname, lastname) values('" + person.firstname + "','" + person.lastname + "')");
 
     data.push(person);
     res.send(person);
