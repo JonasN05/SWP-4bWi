@@ -16,9 +16,7 @@ const data = [
 
 
 app.get('/', async (req, res) => {
-    //res.send('Hello');
-    let result = await db.query("Select* from people");
-    res.send(result)
+    res.send('Hello');
 });
 
 
@@ -28,6 +26,15 @@ app.get('/people', (req, res) => {
 app.get('/people/:id', (req, res) => {
     res.send(data[req.params.id - 1])
 });
+app.get('/db/people', async (req, res) => {
+    try {
+        let result = await db.query("select* from people");
+        res.send(result);
+    } catch (error) {
+        res.status(404).send("An Error Occurred! " + error.message);
+    }
+});
+
 
 app.post('/people', async (req, res) => {
     let person = req.body;
@@ -36,10 +43,29 @@ app.post('/people', async (req, res) => {
     person.id = length
     console.log(person.name)
 
-    let result = await db.query("insert into people(firstname, lastname) values('" + person.firstname + "','" + person.lastname + "')");
-
     data.push(person);
     res.send(person);
+});
+app.post('/db/people', async (req, res) => {
+    let person = req.body;
+    let sql = "insert into people(firstname, lastname) values(?,?)"
+    try {
+        let result = await db.query(sql, [person.firstname, person.lastname]);
+        res.send(result);
+    } catch (error) {
+        res.status(404).send("An Error Occurred! " + error.message);
+    }
+});
+
+app.delete('/db/people', async (req, res) => {
+    let person = req.body;
+    let sql = "DELETE FROM people WHERE id = ?;"
+    try {
+        let result = await db.query(sql, [person.id]);
+        res.send(person);
+    } catch (error) {
+        res.status(404).send("An Error Occurred! " + error.message);
+    }
 });
 
 app.put('/people/:id', (req, res) => {
